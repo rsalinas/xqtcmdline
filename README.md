@@ -8,13 +8,12 @@ The basic idea is to enrich the current system to have more semantics, that can 
 
 We live in a world code is plenty of replication.  Whenever we want to add a new option to a program, we typically must:
 
- * Add the code that parses the option.  Fortunately many people are already using one of the numerous libraries available out there. But still many prefer to do it completely by hand, or they start with something simple and then everything gets out of hands after a while.
- * Update the help. 
- * Update the bash completion script, if any. 
- * Update the manpage, if any.
+ 1. Add the code that parses the option.  Fortunately many people are already using one of the numerous libraries available out there. But still many prefer to do it completely by hand, or they start with something simple and then everything gets out of hands after a while.
+ 2. Update the help. 
+ 3. Update the bash completion script, if any. 
+ 4. Update the manpage, if any.
   
  My thesis is that the first three elements can be derived from a single source if it is rich enough semantically, thus saving lots of time and grief and allowing for creative usages of this kind of "instrospection into programs".
-
 
 # Compiling
 
@@ -24,6 +23,7 @@ It is a cmake project.
  * mkdir build
  * cd build
  * cmake ..
+ * make
 
 # Trying out the thing
 
